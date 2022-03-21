@@ -3,8 +3,8 @@ import './App.css';
 
 export default function RandomCat() {
 	const [url, setUrl] = useState('');
-	const fetchURL =
-		'https://api.thecatapi.com/v1/images/search?api_key=d1b9c023-b8cd-4b90-b1b9-71a7cf27cb2';
+	const fetchURL = `https://api.thecatapi.com/v1/images/search?api_key=${process
+		.env.REACT_APP_CAT_API_KEY}`;
 
 	function FetchData() {
 		fetch(fetchURL).then(response => response.json()).then(data => {
@@ -20,7 +20,6 @@ export default function RandomCat() {
 			<button className="randomCat_btn" onClick={FetchData}>
 				A new picture, please
 			</button>
-			
 		</div>
 	);
 }
