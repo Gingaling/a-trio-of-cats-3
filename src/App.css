@@ -9,6 +9,7 @@
 body {
 	margin: 0;
 	font-family: 'Fredoka One', cursive;
+	background-color: rgb(216, 221, 138);
 }
 
 .container_main {
@@ -20,7 +21,9 @@ body {
 }
 
 nav {
-	display: flex;
+	color: yellow;
+	text-decoration-color: aqua;
+	text-decoration-style: double;
 	flex-direction: row;
 	font-weight: bolder;
 }
@@ -58,8 +61,9 @@ nav {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 40%;
-	max-height: 50%;
+	width: 30%;
+	max-height: 30%;
+	border: 10px solid;
 }
 
 .randomCat_btn {
