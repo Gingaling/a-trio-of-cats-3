@@ -10,24 +10,20 @@ import Header from './Header';
 import RandomCat from './RandomCat';
 
 function App() {
-	return (
-        <>
-         <BrowserRouter>
-      <Routes>
-          <Route path="/" element={<Layout />}>
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-           <Route path="home" element={<Home />} />
-          </Route>
-      </Routes>
-    </BrowserRouter>
-		<div className="container_main">
+	return <div className="container_main">
 			<Header />
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<Layout />}>
+						<Route path="about" element={<About />} />
+						<Route path="contact" element={<Contact />} />
+						<Route path="home" element={<Home />} />
+					</Route>
+				</Routes>
+			</BrowserRouter>
 			<RandomCat />
-		</div>
-        </>
-	);
+		</div>;
 }
 
 export default App;
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'));

@@ -19,6 +19,12 @@ body {
 	align-items: center;
 }
 
+nav {
+	display: flex;
+	flex-direction: row;
+	font-weight: bolder;
+}
+
 .header {
 	display: flex;
 	flex-direction: column;
@@ -27,7 +33,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 150px;
+	height: 100px;
 	width: 100%;
 }
 
@@ -66,7 +72,6 @@ body {
 	width: 170px;
 	border-radius: 40px;
 	align-content: center;
-	border: 5px solid black;
 	padding: 1px;
 }
 
