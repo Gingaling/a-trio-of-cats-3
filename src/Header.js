@@ -9,6 +9,7 @@ function Header() {
 	return (
 		<div className="header">
 			<h1>A Trio of Cats</h1>
+			<button id='about'>about this app</button>
 		</div>
 	);
 }

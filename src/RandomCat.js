@@ -15,11 +15,12 @@ export default function RandomCat() {
 	}
 
 	return (
-		<div className="randomCat___main">
-			<img className="randomCat___image" src={url} />
+		<div className="container_cat">
+			<img className="randomCat_image" src={url} />
 			<button className="randomCat_btn" onClick={FetchData}>
 				A new picture, please
 			</button>
+			
 		</div>
 	);
 }

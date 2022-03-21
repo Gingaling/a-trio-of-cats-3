@@ -5,7 +5,7 @@ import RandomCat from './RandomCat';
 
 function App() {
 	return (
-		<div className="App">
+		<div className="container_main">
 			<Header />
 			<RandomCat />
 		</div>
