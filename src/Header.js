@@ -8,7 +8,7 @@ import './App.css';
 function Header() {
 	return (
 		<div className="header">
-			<h1>Welcome to <br />A Trio of Cats, Less Two</h1>
+			<h1>Welcome to <br />A Trio of Cats</h1>
 		</div>
 	);
 }
